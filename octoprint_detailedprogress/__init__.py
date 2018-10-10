@@ -16,7 +16,7 @@ class DetailedProgressPlugin(octoprint.plugin.EventHandlerPlugin,
 	_etl_format = ""
 	_eta_strftime = ""
 	_messages = []
-	_M73 = False
+	_M73 = True
 	_PrusaStyle = False
 	def on_event(self, event, payload):
 		if event == Events.PRINT_STARTED:
